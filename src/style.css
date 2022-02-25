@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --ff-head: 'Playfair Display', 'Times New Roman';
+    --ff-main: 'Roboto Serif', 'Times New Roman', 'Noto Serif';
+    --color-back: hsl(60, 11%, 85%);
+    --color-main: hsl(0, 0%, 20%);
+    --color-secondary: hsl(0, 0%, 95%);
+    --color-accent-underline: hsl(9, 40%, 63%);
+    --color-accent: hsl(10, 33%, 79%);
+    --font-color: hsl(0, 0%, 90%);
+    --font-support-color: hsl(0, 0%, 15%);
+}
+
+body {
+    background-color: var(--color-back);
+}
+
+.title {
+    font-family: var(--ff-head);
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 0.25em;
+    margin-top: 0.25em;
+    color: var(--color-main);
+    text-decoration-line: underline;
+    text-decoration-color: var(--color-accent-underline);
+    overflow-x: hidden;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    background: var(--color-accent-underline);
+    height: 0.1em;
+    width: 2em;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.main-body {
+    border: 3px;
+    border-style: solid;
+    border-radius: 1em;
+    border-color: var(--color-main);
+    background-color: var(--color-secondary);
+}
+
+#content {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    max-width: 85%;
+    max-height: 80%;
+}
+
+#left-content {
+    min-width: 25%;
+
+}
+
+#right-content {
+    min-width: 25%;
+}
+
+#entry-right {
+    overflow-y: scroll;
+    max-height: 80%;
+
+}
+
+#entry-left {
+    overflow-y: scroll;
+    max-height: 80%;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+    background-color: var(--color-accent);
+}
+
+#example {
+    background-color: var(--color-accent);
+}
+
+.btn-example {
+    opacity: 0%;
+}
+
+.btn-example:hover {
+    opacity: 100%;
+}
