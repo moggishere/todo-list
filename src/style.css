@@ -64,6 +64,7 @@ body {
     font-family: var(--ff-button);
     font-weight: 700;
     font-style: bold;
+    min-width: 3em;
     border-radius: 1em;
     border-color: var(--color-main);
     box-shadow: 0.15em 0.1em;
@@ -78,7 +79,7 @@ body {
 .buttons-main:active {
     box-shadow: 0 0;
     background-color: var(--color-secondary);
-    transition: 0.1s;
+    transition: 0.05s;
 }
 
 #content {
