@@ -15,10 +15,11 @@
 
                 <header class="card-header">
                     <h1 class="title">projects</h1>
-                    <div class="content-buttons">
-                        <button class="buttons-main" id="buttons-projects-add">+</button>
-                        <button class="buttons-main" id="buttons-projects-delete">delete</button>
-                    </div>
+                    <form id='projects-form-submit'>
+                        <input autocomplete="off" class='content-buttons form-text-input' type='text'
+                            name='project-name' placeholder='insert project name'>
+                        <input class="content-buttons buttons-main" id="buttons-projects-add" type="submit" value="+">
+                    </form>
                 </header>
 
 
@@ -39,8 +40,6 @@
                         </div>
 
                     </div>
-                    <p>I am also an entry</p>
-                    <p>I am a much longer entry</p>
                 </div>
 
             </div>
@@ -48,10 +47,14 @@
 
                 <header class="card-header">
                     <h1 class="title">tasks</h1>
-                    <div class="content-buttons">
+                    <form id='tasks-form-submit' class='content-buttons'>
+                        <input autocomplete="off" class='content-buttons form-text-input' type='text'
+                            name='task-name' placeholder='insert task name'>
+                        <input class="content-buttons buttons-main" id="buttons-task-add" type="submit" value="+">
+                    </form>
+                    <!-- <div class="content-buttons">
                         <button class="buttons-main" id="buttons-tasks-add">+</button>
-                        <button class="buttons-main" id="buttons-tasks-delete">delete</button>
-                    </div>
+                    </div> -->
                 </header>
 
 

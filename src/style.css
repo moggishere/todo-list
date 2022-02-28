@@ -58,6 +58,18 @@ body {
     text-align: right;
 }
 
+.form-text-input {
+    text-align: left;
+    border: none;
+    border-bottom: 0.2em solid var(--color-accent-underline);
+    background-color: var(--color-secondary);
+}
+
+.form-text-input:focus {
+    outline: none;
+    border-bottom:0.25em solid var(--color-accent-underline);
+}
+
 .buttons-main {
     text-align: center;
     background-color: var(--color-secondary);
@@ -83,7 +95,10 @@ body {
     transition: 0.05s;
 }
 
-.buttons-entry {
+#projects-form-submit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 #content {

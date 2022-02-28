@@ -2,9 +2,9 @@ import './style.css'
 
 function component() {
 
-    const testing = document.getElementById('buttons-projects-add');
+    const testing = document.getElementById('projects-form-submit');
 
-    testing.addEventListener('click', e => {
+    testing.addEventListener('submit', e => {
         e.preventDefault;
         console.log('you clicked +')
     })
