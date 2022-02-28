@@ -59,6 +59,7 @@ body {
 }
 
 .buttons-main {
+    text-align: center;
     background-color: var(--color-secondary);
     color: var(--color-main);
     font-family: var(--ff-button);
@@ -80,6 +81,9 @@ body {
     box-shadow: 0 0;
     background-color: var(--color-secondary);
     transition: 0.05s;
+}
+
+.buttons-entry {
 }
 
 #content {
@@ -122,6 +126,14 @@ body {
 
 #example {
     background-color: var(--color-accent);
+}
+
+.folder-entry {
+    font-family: var(--ff-main);
+    min-height: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .btn-example {

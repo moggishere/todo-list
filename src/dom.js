@@ -15,3 +15,9 @@ const htmlElementMaker = (htmlTag, elementId, arrClasses, text) => {
     return newElement;
 
 }
+
+const randomIdSetter = () => {
+
+    return Math.random().toString(16).substring(2, 8);
+
+}
