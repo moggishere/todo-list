@@ -15,7 +15,7 @@
 
                 <header class="card-header">
                     <h1 class="title">projects</h1>
-                    <form id='projects-form-submit'>
+                    <form id='projects-form-submit' onsubmit="return false">
                         <input autocomplete="off" class='content-buttons form-text-input' type='text'
                             name='project-name' placeholder='insert project name'>
                         <input class="content-buttons buttons-main" id="buttons-projects-add" type="submit" value="+">
@@ -47,7 +47,7 @@
 
                 <header class="card-header">
                     <h1 class="title">tasks</h1>
-                    <form id='tasks-form-submit' class='content-buttons'>
+                    <form id='tasks-form-submit' class='content-buttons' onsubmit="return false">
                         <input autocomplete="off" class='content-buttons form-text-input' type='text'
                             name='task-name' placeholder='insert task name'>
                         <input class="content-buttons buttons-main" id="buttons-task-add" type="submit" value="+">

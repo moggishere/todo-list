@@ -53,6 +53,7 @@ body {
 }
 
 .content-buttons {
+    overflow-x: auto;
     margin-right: 1em;
     margin-bottom: 1em;
     text-align: right;
