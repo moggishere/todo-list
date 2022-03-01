@@ -7,11 +7,13 @@ function component() {
 
     testing.addEventListener('submit', e => {
         e.preventDefault;
-        
+        let testInput = document.getElementById('new-project').value;
+        testInput = testInput.toString();
+
+        // const project = new Project(testInput);
+        // console.log(testInput);
     })
 
 }
 
 document.body.appendChild(component());
-
-Project.printTest();
