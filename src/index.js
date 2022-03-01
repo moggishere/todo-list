@@ -1,19 +1,18 @@
 import './style.css';
-import { Project } from './projects'
+import { Project } from './projects';
+import { htmlElementMaker, randomIdSetter } from './dom';
 
-function component() {
 
-    const testing = document.getElementById('projects-form-submit');
+const testing = document.getElementById('projects-form-submit');
 
-    testing.addEventListener('submit', e => {
-        e.preventDefault;
-        let testInput = document.getElementById('new-project').value;
-        testInput = testInput.toString();
+testing.addEventListener('submit', e => {
+    e.preventDefault;
 
-        // const project = new Project(testInput);
-        // console.log(testInput);
-    })
+    let testInput = document.getElementById('new-project').value;
 
-}
+    document.getElementById('entry-left').innerHTML = ''
 
-document.body.appendChild(component());
+    const $$ = new Project(testInput);
+    $$.testPrint();
+
+})
