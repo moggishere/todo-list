@@ -16,8 +16,8 @@
                 <header class="card-header">
                     <h1 class="title">projects</h1>
                     <form id='projects-form-submit' onsubmit="return false">
-                        <input autocomplete="off" class='content-buttons form-text-input' type='text'
-                            name='project-name' placeholder='insert project name'>
+                        <input autocomplete="off" class='content-buttons form-text-input' id="new-project" type='text'
+                            name='project-name' placeholder=' project name'>
                         <input class="content-buttons buttons-main" id="buttons-projects-add" type="submit" value="+">
                     </form>
                 </header>
@@ -27,12 +27,12 @@
                     <div id="example" class="folder-entry">
                         <p>I am an entry</p>
                         <div>
-                            <button class="buttons-main buttons-entry"><svg style="width:1.5em;height:1.00em"
+                            <button class="buttons-main buttons-entry">edit<svg
                                     viewBox="0 0 24 24">
                                     <path fill="currentColor"
                                         d="M5,3C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19H5V5H12V3H5M17.78,4C17.61,4 17.43,4.07 17.3,4.2L16.08,5.41L18.58,7.91L19.8,6.7C20.06,6.44 20.06,6 19.8,5.75L18.25,4.2C18.12,4.07 17.95,4 17.78,4M15.37,6.12L8,13.5V16H10.5L17.87,8.62L15.37,6.12Z" />
                                 </svg></button>
-                            <button class="buttons-main buttons-entry"><svg style="width:1.5em;height:1.00em"
+                            <button class="buttons-main buttons-entry">delete<svg
                                     viewBox="0 0 24 24">
                                     <path fill="currentColor"
                                         d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M9,8H11V17H9V8M13,8H15V17H13V8Z" />
@@ -48,8 +48,8 @@
                 <header class="card-header">
                     <h1 class="title">tasks</h1>
                     <form id='tasks-form-submit' class='content-buttons' onsubmit="return false">
-                        <input autocomplete="off" class='content-buttons form-text-input' type='text'
-                            name='task-name' placeholder='insert task name'>
+                        <input autocomplete="off" class='content-buttons form-text-input' type='text' name='task-name'
+                            placeholder=' task name'>
                         <input class="content-buttons buttons-main" id="buttons-task-add" type="submit" value="+">
                     </form>
                     <!-- <div class="content-buttons">
@@ -60,71 +60,22 @@
 
                 <div id="entry-right">
                     <div class="task">
-                        <input type="checkbox">
+                        <label for="checkbox-done"></label>
+                        <input type="checkbox" name="checkbox-done" name="checkbox-done">
                         <p>this is content Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, facilis.
                             Libero
                             iure dolorem autem alias.</p>
                         <button>edit</button>
                         <button>delete</button>
                     </div>
-                    <div class="task">
-                        <input type="checkbox">
-                        <p>this is even more content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem,
-                            cumque
-                            natus
-                            in alias doloremque voluptatibus quas sequi ipsa error veniam voluptatum rerum cupiditate
-                            quo
-                            dolor
-                            dignissimos animi? Minima, eos sapiente. Nihil alias at in eum asperiores pariatur
-                            recusandae
-                            deleniti quisquam. Sit, debitis blanditiis. Nesciunt repellat animi, architecto sequi ipsam
-                            recusandae!</p>
-                        <button>edit</button>
-                        <button>delete</button>
-                    </div>
-                    <div class="task">
-                        <input type="checkbox">
-                        <p>here's for another more content: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Animi
-                            cumque molestias incidunt, voluptatem nostrum tempora sed ad odit aut amet! Incidunt nisi
-                            quod
-                            aliquid necessitatibus voluptate doloremque itaque quia asperiores. Error maiores recusandae
-                            laborum
-                            accusamus quam in enim corporis adipisci voluptate dolores voluptatum, tenetur doloremque
-                            asperiores
-                            deleniti iste, impedit iure architecto est libero quis nobis vero veniam? Exercitationem
-                            animi
-                            veniam ex porro ratione perferendis vel natus cupiditate magni doloremque, molestias,
-                            laborum
-                            quaerat nihil odit nobis aliquid sit nisi, sed eius.</p>
-                        <button>edit</button>
-                        <button>delete</button>
-                    </div>
-                    <div class="task">
-                        <input type="checkbox">
-                        <p>here's for another more content: Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Animi
-                            cumque molestias incidunt, voluptatem nostrum tempora sed ad odit aut amet! Incidunt nisi
-                            quod
-                            aliquid necessitatibus voluptate doloremque itaque quia asperiores. Error maiores recusandae
-                            laborum
-                            accusamus quam in enim corporis adipisci voluptate dolores voluptatum, tenetur doloremque
-                            asperiores
-                            deleniti iste, impedit iure architecto est libero quis nobis vero veniam? Exercitationem
-                            animi
-                            veniam ex porro ratione perferendis vel natus cupiditate magni doloremque, molestias,
-                            laborum
-                            quaerat nihil odit nobis aliquid sit nisi, sed eius.</p>
-                        <button>edit</button>
-                        <button>delete</button>
-                    </div>
-                    <button>+ task</button>
-
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="footer-div">
+            <p class="footer-text">ary © 2022</p>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
 

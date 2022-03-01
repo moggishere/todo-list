@@ -1,4 +1,5 @@
-import './style.css'
+import './style.css';
+import { Project } from './projects'
 
 function component() {
 
@@ -6,9 +7,11 @@ function component() {
 
     testing.addEventListener('submit', e => {
         e.preventDefault;
-        console.log('you clicked +')
+        
     })
 
 }
 
 document.body.appendChild(component());
+
+Project.printTest();
