@@ -9,7 +9,7 @@ const htmlElementMaker = (htmlTag, elementId, arrClasses, text) => {
     }
 
     if (text) {
-        htmlElementMaker.innerText = text;
+        newElement.innerText = text;
     }
 
     return newElement;
@@ -22,4 +22,9 @@ const randomIdSetter = () => {
 
 }
 
-export { htmlElementMaker, randomIdSetter };
+const fieldCleaner = (elementId) => {
+    document.getElementById(`${elementId}`).innerHTML = '';
+    return
+}
+
+export { htmlElementMaker, randomIdSetter, fieldCleaner };

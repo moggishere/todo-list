@@ -1,18 +1,28 @@
 import './style.css';
-import { Project } from './projects';
-import { htmlElementMaker, randomIdSetter } from './dom';
+import { Project, arrProjects, currentProjects } from './projects';
+import { htmlElementMaker, randomIdSetter, fieldCleaner } from './dom';
 
 
-const testing = document.getElementById('projects-form-submit');
+const addProjects = document.getElementById('projects-form-submit');
 
-testing.addEventListener('submit', e => {
+addProjects.addEventListener('submit', e => {
     e.preventDefault;
 
     let testInput = document.getElementById('new-project').value;
 
-    document.getElementById('entry-left').innerHTML = ''
+    // fieldCleaner('entry-left');
 
-    const $$ = new Project(testInput);
-    $$.testPrint();
+    const newProjectEntry = new Project(testInput);
+    arrProjects.push(newProjectEntry);
+
+    Project.renderProjects();
+    
+    newProjectEntry.testPrint();
+    // newProjectEntry.render();
+    // newProjectEntry.renderProjects();
+
+    // renderProjects(arrProjects);
 
 })
+
+window.onload(Project.renderProjects());
