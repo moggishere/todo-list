@@ -125,15 +125,27 @@ body {
 #entry-right {
     overflow-y: scroll;
     max-height: 80%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
+#entry-right::-webkit-scrollbar {
+    display: none;
 }
 
 #entry-left {
     overflow-y: scroll;
     max-height: 80%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#entry-left::-webkit-scrollbar {
+    display: none;
 }
 
 .task {
+    font-family: var(--ff-main);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -151,6 +163,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    margin-left: 0.2em;
 }
 
 .btn-example {
@@ -184,6 +198,21 @@ body {
     text-align: center;
     font-size: 0.9em;
     font-weight: 700;
+}
+
+.checkbox-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox {
+    background-color: var(--color-main);
+}
+
+.line-text {
+    text-decoration: line-through;
 }
 
 svg {

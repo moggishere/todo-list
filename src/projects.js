@@ -20,8 +20,8 @@ class Project {
         const newDiv = htmlElementMaker('div', this.id, ['folder-entry'], null);
         const newEntryName = htmlElementMaker('p', null, null, `${this.projectName}`);
         const buttonsDiv = htmlElementMaker('div', null, null, null);
-        const deleteButton = htmlElementMaker('button', null, ['buttons-main', 'buttons-entry'], 'edit');
-        const editButton = htmlElementMaker('button', null, ['buttons-main', 'buttons-entry'], 'delete');
+        const deleteButton = htmlElementMaker('button', null, ['buttons-main', 'buttons-entry'], 'delete');
+        const editButton = htmlElementMaker('button', null, ['buttons-main', 'buttons-entry'], 'edit');
 
         deleteButton.addEventListener('click', e => {
             this.delete();
@@ -43,6 +43,20 @@ class Project {
 
         projects.appendChild(newDiv);
 
+        newDiv.addEventListener('click', e => {
+            console.log(`you clicked ${this.id}`);
+
+            currentProjects = this;
+            currentProjects.active = false;
+            // this.rend
+        })
+
+    }
+
+    renderTasks() {
+        const tasks = document.getElementById('entry-right');
+        tasks.innerHTML='';
+        this.tasks.forEach((task) => task.render());
     }
 
     delete() {
@@ -63,7 +77,7 @@ class Project {
 
 
 //project objects will be in this array, each object holds another array of arrTasks
-let arrProjects = [new Project('testing')];
+let arrProjects = [new Project('this is a test entry')];
 let currentProjects = arrProjects[0];
 
 export { Project, arrProjects, currentProjects }
